@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>홈</title>
+    <style>
+        h1{color:pink;
+        }
+    </style>
+</head>
+<body>
+<br><br><br>
+<center><h1>워드카운트</h1></center>
+<center><a href="{% url 'about' %}">워드카운트가 뭔가요-?</a> <br>
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!" />
+</form></center>
+</body>
+</html>
